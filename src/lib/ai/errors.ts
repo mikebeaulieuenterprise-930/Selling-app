@@ -11,6 +11,8 @@ export function actionErrorMessage(t: Dictionary, code: ActionErrorCode): string
       return t.common.errorAiRefused;
     case "format":
       return t.common.errorAiFormat;
+    case "api":
+      return t.common.errorAiApi;
     case "needs_offer":
       return t.reply.needsOffer;
     default:

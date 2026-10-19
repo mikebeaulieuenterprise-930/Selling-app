@@ -28,6 +28,7 @@ export const fr = {
     errorAiKey: "La clé Anthropic n'est pas configurée (ANTHROPIC_API_KEY).",
     errorAiRefused: "L'IA n'a pas pu répondre à cette demande. Reformule et réessaie.",
     errorAiFormat: "L'IA a renvoyé une réponse inattendue. Réessaie.",
+    errorAiApi: "L'appel à l'IA a échoué. Vérifie ta clé Anthropic et ton solde de crédits, puis réessaie.",
   },
   nav: {
     today: "Aujourd'hui",

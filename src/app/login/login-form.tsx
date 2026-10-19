@@ -55,9 +55,12 @@ export function LoginForm({
         />
       </label>
       {errorCode ? (
-        <p role="alert" className="rounded-xl bg-bad-soft px-3 py-2 text-sm text-bad">
-          {t.errors[errorCode]}
-        </p>
+        <div role="alert" className="flex flex-col gap-1 rounded-xl bg-bad-soft px-3 py-2 text-sm text-bad">
+          <p>{t.errors[errorCode]}</p>
+          {state.status === "error" && state.detail ? (
+            <p className="break-words font-mono text-xs opacity-80">{state.detail}</p>
+          ) : null}
+        </div>
       ) : null}
       <Button type="submit" pending={pending} pendingLabel={t.sending} className="w-full">
         {t.submit}

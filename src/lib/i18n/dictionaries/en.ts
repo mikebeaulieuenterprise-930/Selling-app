@@ -30,6 +30,7 @@ export const en: Dictionary = {
     errorAiKey: "The Anthropic key is not configured (ANTHROPIC_API_KEY).",
     errorAiRefused: "The AI could not answer this request. Rephrase and try again.",
     errorAiFormat: "The AI returned an unexpected answer. Try again.",
+    errorAiApi: "The AI call failed. Check your Anthropic key and credit balance, then try again.",
   },
   nav: {
     today: "Today",
